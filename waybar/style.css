@@ -2,24 +2,24 @@
     border: none;
     border-radius: 0;
     font-family: JetBrainsMono Nerd Font, monospace;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 15px;
     min-height: 0;
 }
 
 window#waybar {
     background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    color: #ffffff;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #555869;
+    color: #080261;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #ca2042;
 }
 
 #workspaces button.focused {
@@ -35,22 +35,24 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: #cdd6f4;
+    background: #333e60;
     color: #11111b; 
     border-radius: 10px;
 }
 
 #window,
 #clock,
+#custom-bluetooth,
 #battery,
 #pulseaudio,
 #network,
 #cpu,
 #memory,
 #workspaces,
-#tray,
+/* #tray, */
 #backlight,
-#custom-wlogout {
+#custom-wlogout
+{
     background: #1e1e2e;
     padding: 0px 10px;
     margin: 3px 0px;
@@ -59,16 +61,18 @@ window#waybar {
 }
 
 #backlight {
+    color: #cdd6f4;
     border-radius: 10px 0px 0px 10px;
 }
 
 #tray {
+    color: #7287fd;
     border-radius: 10px;
     margin-right: 10px;
 }
 
 #workspaces {
-    background: #1e1e2e;
+    background: #c9d2d4;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -76,53 +80,65 @@ window#waybar {
 }
 
 #cpu {
-    color: #e78284;
+    color: #cdd6f4;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
 
+#custom-bluetooth {               
+        color: #cdd6f4;
+        border-radius: 10px;
+        margin-left: 5px;
+        
+    
+}
 #memory {
-    color:#e78284;
+    color:#cdd6f4;
     border-radius: 10px 0px 0px 10px;
 }
 
 #window {
-    color : #7287fd;
+    color : #7A73D1;
     border-radius: 10px;
-    margin-left: 60px;
+    margin-left: 10px;
     margin-right: 60px;
+    
 }
-
 #clock {
-    color: #df8e1d;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 5px;
-    border-right: 0px;
+    color: #cdd6f4;
+    border-radius: 15px;
+    margin-right: 10px;
+    /*border-right: 0px;
+    border-left: 0px; */
 }
 
 #network {
-    color:  #ca9ee6;
+    color:  #cdd6f4;
     border-radius: 10px 0px 0px 10px;
 
 }
 
 #pulseaudio {
-    color:#8caaee;
-    
+    color:#cdd6f4;
+    border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
 }
 
 #custom-wlogout {
     color: #d20f39;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    /* border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
-    margin-right: 5px;
+    margin-right: 5px; */
 }
 
 #battery {
-    color: #81c8be;
+    color: #cdd6f4;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
